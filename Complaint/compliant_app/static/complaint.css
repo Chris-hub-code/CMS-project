@@ -1,0 +1,86 @@
+right orm{
+	margin-top: 50px;
+	margin-left: 150px;
+	width: 700px;
+	box-sizing: border-box;
+	box-shadow: 0 8px 16px rgba(0,0,0, 0.3);
+   border-bottom-right-radius: 6px;
+   border-bottom-left-radius: 6px;
+  height: 550px;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+.txt_field{
+	margin-bottom: 30px;
+	position: relative;
+
+}
+.txt_field label{
+	position: relative;
+	top: 50%;
+	left: 5px;
+	color: black;
+	transform: translateY(-50%);
+	font-size: 20px;
+	pointer-events: none;
+	transition: .5s;
+}
+.txt_field input{
+	width: 60%;
+	padding: 0 5px;
+	height: 50px;
+	font-size: 16px;
+	border: 1px solid #2691d9;
+	background: none;
+	border-radius: 5px;
+	line-height: 70px;
+}
+.text_field input{
+	width: 60%;
+	padding: 0 5px;
+	height: 150px;
+	font-size: 16px;
+	border: 1px solid #2691d9;
+	background: none;
+	border-radius: 5px;
+
+}
+.text_field label{
+	position: relative;
+	top: 50%;
+	left: 5px;
+	color:black;
+	transform: translateY(-50%);
+	font-size: 20px;
+	pointer-events: none;
+	transition: .5s;
+}
+input[type="submit"]{
+	width: 70%;
+	height: 50px;
+	border: 1px solid;
+	background: #2691d9;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	margin-left: 50px;
+	margin-top: 2px;
+}
+input[type="submit"]:hover{
+	border-color: #2691d9;
+	transition: .5s;
+}
+.sidebar ul li span{
+	color: white;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.rght{
+	margin-left: 400px;
+}

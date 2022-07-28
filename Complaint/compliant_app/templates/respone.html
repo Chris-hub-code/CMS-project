@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'respone.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'dashboard.css' %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	
+	<title>report</title>
+</head>
+<body>
+
+<div class="containr">
+	<div class="sidebar">
+		<h2>EARTHVIEW <br> CMS</h2>
+		<ul>
+			<li><span>Hello, {{request.user}}</span></li>
+			<!--<li><a href="{% url 'profile' %}"> Profile</a></li>-->
+			<li><a href="{% url 'dashboard' %}">Home</a></li>
+			<li><a href="{% url 'complaint' %}">Add Complaints</a></li>
+			<li><a href="{% url 'response' %}">Feedback</a></li>
+		</ul>
+		</ul>
+	</div>
+	<div class="right">
+		
+			<div class="txt_field">
+				
+			    <h3>RESPONSE TO YOUR COMPLAINT</h3>
+				{% for response in responses %}
+
+				
+<table  class="table" style="width:100%">
+	<tr>
+	  <th>Complaint</th>
+	  <th>Type</th>
+	  <th>Description</th>
+	  <th>Feedback</th>
+	  <th>Complaint Date</th>
+	  <th>Feedback Date</th>
+	  
+	  
+
+
+	</tr>
+	<tr>
+	  <td>{{ response.Subject }}</td>
+	  <td>{{ response.Type_of_complaint }}</td>
+	  <td>{{ response.Description }}</td>
+	  <td>{{ response.response }}</td>
+	  <td>{{ response.Complaint_date }}</td>
+	  <td>{{ response.Feedback_date }}</td>
+	 
+	</tr>
+	</tr>
+	
+  </table>
+
+  
+				
+				<!--{{ response.response }}<br>
+				{{ response.Subject }}<br>
+				{{ response.Type_of_complaint }}<br>
+				{{ response.status }}-->
+				{% endfor %}
+				
+				
+           
+			</div>
+		
+	</div>
+	
+</div>
+</body>
+</html>

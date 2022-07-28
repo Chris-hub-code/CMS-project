@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+.containr{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+}
+.sidebar{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #2691d9;
+	padding: 30px 0px;
+}
+.sidebar h2{
+	color: white;
+	margin-bottom:30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sidebar ul li{
+	padding: 15px;
+    border-top: 2px solid rgba(255,255,255,0.05);
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+.sidebar ul li a{
+	color: white;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.sidebar ul li span{
+	color: white;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.sidebar ul li:hover{
+	background-color: #0080ff;
+}
+.right{
+	margin-left: 350px;
+	display: flex;
+	flex-direction: row;
+	width: 1000px;
+
+}
+.right .subright{
+	float:left;
+	margin-top: 90px;
+	width: 37%;
+}
+.right .subright h2{
+	color: #0080ff;
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-family: Optima;
+}
+.subright .p2{
+	margin-top: 50px;
+	font-family: Garamond
+
+}
+.subright .p{
+     font-family: Garamond
+}
+.right .subright p{
+	font-size: 18px;
+}
+
+.right .subleft{
+	float: left;
+	width: 50%;
+	margin-top: 100px;
+}
+.right .subleft p{
+	padding-left: 70px;
+}
+.logout{
+	margin-top: 5px;
+}
+.logout button{
+	  background-color:#0080ff ; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}

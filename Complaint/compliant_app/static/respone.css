@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+.nav{
+	box-sizing: border-box;
+	margin-left: 400px;
+	background-color: red;
+
+}
+.container{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+}
+.sidebar{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #2691d9;
+	padding: 30px 0px;
+}
+.sidebar h2{
+	color: white;
+	margin-bottom:30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sidebar ul li{
+	padding: 15px;
+    border-top: 2px solid rgba(255,255,255,0.05);
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+.sidebar ul li span{
+	color: white;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.sidebar ul li a{
+	color: white;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.sidebar ul li:hover{
+	background-color: #0080ff;
+}
+.right{
+	margin-left: 350px;
+	display: flex;
+	flex-direction:;
+	width: 1000px;
+
+}
+
+ .txt_field h3{
+	color: #0080ff;
+	font-size: 19px;
+	text-align: centre;
+	margin-top: 20px;
+	font-family: Optima;
+	text-decoration: underline;
+}
+.txt_field label{
+	position: relative;
+	top: 20%;
+	left: 5px;
+	color:#0080ff;
+	transform: translateY(-50%);
+	font-size: 20px;
+	pointer-events: none;
+	transition: .5s;
+}
+.txt_field span{
+	position: relative;
+	top: 20%;
+	left: 5px;
+	color: black;
+	transform: translateY(-50%);
+	font-size: 20px;
+	pointer-events: none;
+	transition: .5s;
+}
+.table{
+	margin-left: 10px;
+	margin-top: 50px;
+	border:1px solid #0080ff ;
+}
+.table, th, td {
+    border:1px solid #0080ff ;
+
+}
+.table th,td{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 40px;
+}
+ 
+
+.logout{
+	margin-top: 5px;
+	margin-left: 250px;
+}
+.logout button{
+	  background-color:#0080ff ; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}

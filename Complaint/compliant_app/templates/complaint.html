@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dashboard</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'complaint.css' %}">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+	<script src="https://kit.fontawesome.com/9e06515a14.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+<div class="containr">
+	<div class="sidebar">
+		<h2>EARTHVIEW <br> CMS</h2>
+		<ul>
+			<li><span>Hello, {{request.user}}</span></li>
+			<!--<li><a href="{% url 'profile' %}"> Profile</a></li>-->
+			<li><a href="{% url 'dashboard' %}">Home</a></li>
+			<li><a href="{% url 'complaint' %}">Add Complaints</a></li>
+			<li><a href="{% url 'response' %}">Feedback</a></li>
+		</ul>
+
+	</div>
+	<div class="right">
+		
+	  
+		<div class="mb-3">
+			<h5><u>ADD YOUR COMPLAINT HERE</u></h5>
+	  
+	
+		 <form method="post">
+			{% csrf_token %}
+		  
+			
+			{{ complaint_form.as_p}}
+           
+
+			<input type="submit"  value="Submit">
+		
+		
+		</form>
+	  </div>
+	
+		{% for message in messages %}
+		{{ message }}
+		{% endfor %}
+		
+	</div>
+</div>
+
+</body>
+</html>
